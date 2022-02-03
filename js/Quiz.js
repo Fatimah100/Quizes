@@ -53,13 +53,9 @@ class Quiz {
 //check the condition whether player answer and correct ans are equal
 //if equal fill with green 
 //if not equal fill with red
-      if(playerans=correctans()){
-          fill(green)
-        }
-
-      if(playerans!=correctans()){
-          fill(red)
-        }
+if (correctAns === allContestants[plr].answer) 
+  fill("Green") 
+     else fill("red");
 
         display_Answers+=30;
         textSize(20);
